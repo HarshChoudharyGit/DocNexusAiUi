@@ -96,7 +96,8 @@ const StarField = ({ dense = false }) => {
         className="absolute inset-0 overflow-hidden pointer-events-none"
         style={{ zIndex: 0 }}
       />
-      <style jsx>{`
+      <style jsx>
+        {`
         @keyframes twinkle {
           0%, 100% { opacity: 0.5; }
           50% { opacity: 1; }
