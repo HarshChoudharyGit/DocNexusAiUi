@@ -21,18 +21,6 @@ api.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-// Request interceptor to add Authorization header
-api.interceptors.request.use(
-  (config) => {
-    const token = localStorage.getItem('accessToken');
-    if (token) {
-      config.headers.Authorization = `Bearer ${token}`;
-    }
-    return config;
-  },
-  (error) => Promise.reject(error)
-);
-
 /**
  * Upload a document
  * @param {File} file - File to upload
