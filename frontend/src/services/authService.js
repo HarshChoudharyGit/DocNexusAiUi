@@ -3,7 +3,7 @@ import axios from "axios";
 // Configure axios instance with credentials
 const api = axios.create({
 
-  baseURL: import.meta.env.VITE_API_BASE_URL || "https://docnexus-ai.onrender.com/api/v1",
+  baseURL: import.meta.env.VITE_API_BASE_URL || "https://docnexusbackend-1.onrender.com/api/v1",
   withCredentials: true,
   headers: {
     "Content-Type": "application/json",
